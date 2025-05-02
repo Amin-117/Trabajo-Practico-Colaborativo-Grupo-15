@@ -1,0 +1,19 @@
+.text-center {
+    font-family: rubik;
+}
+p {
+    font-family: montserrat;
+    line-height: 1.75;
+    text-align: justify;
+}
+img {
+    width: 600px;
+    height: 1000px;
+    object-fit: cover;
+}
+.titulo_h2_centrado {
+    text-align: center;
+}
+.oferta {
+    text-align: center;
+}
