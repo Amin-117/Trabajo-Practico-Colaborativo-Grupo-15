@@ -56,3 +56,38 @@ body {
     bottom: 0;
     width: 100%;
   }
+  /*Estrenos.html*/
+  body.estrenos{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .Inicio{
+    text-align: center;
+    font-size: 5rem;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+  .row{
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    justify-content: center;
+  }
+  .row img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+  }
+  .row h3{
+    font-size: 3rem;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+   }
+   .row p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+  }
