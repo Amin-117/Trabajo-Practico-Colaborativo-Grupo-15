@@ -4,8 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000000;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    position: relative;
   }
 
   header {
@@ -28,7 +29,7 @@ body {
     list-style: none;
     padding: 5px;
     margin-top: -20px;
-    gap: 13rem;
+    gap: 10rem;
   }
   
   nav a {
@@ -49,14 +50,14 @@ body {
   }
   
   .foot {
-    display: flex;
-    justify-content: center;
     color: #ffffff;
-    font-size: 1.06rem;
+    font-size: 1rem;
     background: rgba(0, 0, 0, 0.4);
     font-weight: bolder;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 0.65rem;
+    height: 2.9rem;
   }
 
 /*imagenes y texto*/
@@ -72,6 +73,7 @@ body {
 
 .titulo_h2_centrado {
   text-align: center;
+  margin-top: -1rem;
 }
 
 .descripcion-peliculas{
