@@ -1,3 +1,4 @@
+/*Navegador,footer y cuerpo de las paginas*/
 body {
     color: #ffffff;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     min-height: 100vh;
     position: relative;
   }
+
   header {
     background: rgba(0, 0, 0, 0.4);
     color: #ffffff;
@@ -13,6 +15,7 @@ body {
     font-size: 1.325rem;
     text-align: center;
   }
+
   .titulo {
     padding: 2rem;
     font-size: 2.8rem;
@@ -52,7 +55,41 @@ body {
     font-size: 1.06rem;
     background: rgba(0, 0, 0, 0.4);
     font-weight: bolder;
-    position: absolute;
     bottom: 0;
     width: 100%;
   }
+
+/*imagenes y texto*/
+
+.img-cartelera{
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
+
+
+.titulo_h2_centrado {
+  text-align: center;
+}
+
+.descripcion-peliculas{
+  text-align: justify;
+  line-height: 1.75;
+}
+
+.oferta {
+  text-align: center;
+}
+.btn {
+  margin: 0 auto 30px auto;
+  margin-top: 30px;
+}
+/*imagen de boleteria*/
+#img-boleteria {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  margin: 0 auto 30px auto;
+}
