@@ -1,134 +1,205 @@
-/*Navegador,footer y cuerpo de las paginas*/
+/* === ESTRUCTURA GENERAL === */
 body {
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
 
-  header {
-    background: rgba(0, 0, 0, 0.4);
-    color: #ffffff;
-    padding: 2px;
-    font-size: 1.325rem;
-    text-align: center;
-  }
+body.estrenos {
+  font-family: 'Montserrat', sans-serif;
+}
 
-  .titulo {
-    padding: 2rem;
-    font-size: 2.8rem;
-    font-weight: bolder
-
-  }
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 5px;
-    margin-top: -20px;
-    gap: 10rem;
-  }
-  
-  nav a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 10px 19px;
-    border-radius: 19px;
-    transition: 0.5s;
-    font-size: 1.25rem;
-    font-weight: bold; 
-  }
-  
-  nav a:hover,
-  nav a.active {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    transform: scale(1.03);
-  }
-  
-  .foot {
-    color: #ffffff;
-    font-size: 1rem;
-    background: rgba(0, 0, 0, 0.4);
-    font-weight: bolder;
-    text-align: center;
-    margin-top: auto;
-    padding-top: 0.65rem;
-    height: 2.9rem;
-  }
-  /*Estrenos.html*/
-  body.estrenos{
-    font-family: 'Montserrat', sans-serif;
-  }
-  .Inicio{ /*titulo principal*/
-    text-align: center;
-    font-size: 5rem;
-    margin: auto;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-  }
-  .row{
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-    padding: 15px;
-    justify-content: center;
-  }
-  .row img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: auto;
-    display: block;
-  }
-  .row h3{
-    font-size: 3rem;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
-  }
-  .row p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
-  }
-
-/*cartelera.html*/
-.oferta-title{
+header {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 1.325rem;
+  padding: 2px;
   text-align: center;
+}
+
+.hero {
+  height: 100%;
+  left: 0;
+  min-height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.capa {
+  background: #000;
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.foot {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bolder;
+  height: 3.6rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/* === NAVEGACIÓN === */
+nav ul {
+  display: flex;
+  gap: 12rem;
+  justify-content: center;
+  list-style: none;
+  margin-top: -20px;
+  padding: 5px;
+}
+
+nav a {
+  border-radius: 19px;
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 10px 19px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  transform: scale(1.03);
+}
+
+/* === INDEX === */
+.main-index {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 1.3rem;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.caja1-index-main,
+.caja2-index-main {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  font-weight: bold;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.content-index,
+.contentv2-index,
+.contentv3-index,
+.contentv4-index {
+  border-radius: 10px;
+  padding: 1rem;
+  width: 45%;
+}
+
+.iframme {
+  border-radius: 1rem;
+}
+
+/* === ENCABEZADOS === */
+.titulo {
   font-size: 3rem;
-  margin: auto;
+  font-weight: bolder;
   padding: 2rem;
 }
+
+.tituloh2-apartado {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* === ESTRENOS.HTML === */
+.Inicio {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+  font-size: 3rem;
+  font-weight: bold;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.row {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.row img {
+  border-radius: 20px;
+  display: block;
+  font-weight: bold;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+}
+
+.row h3 {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+  font-size: 3rem;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.row p {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+/* === CARTELERA.HTML === */
+.oferta-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
 .oferta-item {
   font-family: montserrat;
-  text-align: center;
   font-size: 30px;
+  font-weight: bold;
   padding: 0.5rem;
+  text-align: center;
 }
+
 .btn {
   margin: 0 auto 30px auto;
   margin-top: 30px;
   padding: 1rem;
 }
-/*imagen de boleteria*/
+
+/* === BOLETERÍA === */
 #img-boleteria {
+  border-radius: 20px;
   display: block;
-  margin: 0 auto;
   height: 400px;
   margin: 0 auto 30px auto;
-  padding: 1rem;
-}
-.tituloh2-apartado{
-  text-align: center;
-  font-size: 2rem;
-  margin: auto;
-}
-span { /*color destacado*/
-  color: red;
-}
-.text-btn {
-  font-size: 20px !important; /*no me deja cambiar el tamano del btn, debe tener un atributo sobrepuesto, si alguien lo soluciona bienvenido*/
 }
