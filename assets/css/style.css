@@ -63,7 +63,7 @@ body {
   body.estrenos{
     font-family: 'Montserrat', sans-serif;
   }
-  .Inicio{
+  .Inicio{ /*titulo principal*/
     text-align: center;
     font-size: 5rem;
     margin: auto;
@@ -88,45 +88,47 @@ body {
     font-size: 3rem;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
-   }
-   .row p {
+  }
+  .row p {
     font-size: 1.5rem;
     line-height: 1.6;
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
   }
 
-/*imagenes y texto*/
-
-.img-cartelera{
-  display: block;
-  margin: 0 auto;
-  width: 500px;
-  height: auto;
-  margin: 0 auto 30px auto;
-}
-
-
-.titulo_h2_centrado {
+/*cartelera.html*/
+.oferta-title{
   text-align: center;
-  margin-top: -1rem;
+  font-size: 3rem;
+  margin: auto;
+  padding: 2rem;
 }
-
-.descripcion-peliculas{
-  text-align: justify;
-  line-height: 1.75;
-}
-
-.oferta {
+.oferta-item {
+  font-family: montserrat;
   text-align: center;
+  font-size: 30px;
+  padding: 0.5rem;
 }
 .btn {
   margin: 0 auto 30px auto;
   margin-top: 30px;
+  padding: 1rem;
 }
 /*imagen de boleteria*/
 #img-boleteria {
   display: block;
   margin: 0 auto;
-  height: auto;
+  height: 400px;
   margin: 0 auto 30px auto;
+  padding: 1rem;
+}
+.tituloh2-apartado{
+  text-align: center;
+  font-size: 2rem;
+  margin: auto;
+}
+span { /*color destacado*/
+  color: red;
+}
+.text-btn {
+  font-size: 20px !important; /*no me deja cambiar el tamano del btn, debe tener un atributo sobrepuesto, si alguien lo soluciona bienvenido*/
 }
