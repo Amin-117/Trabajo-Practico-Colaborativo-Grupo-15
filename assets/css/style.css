@@ -160,14 +160,12 @@ nav a.active {
 }
 
 .row h3 {
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
   font-size: 3rem;
   font-weight: bold;
   justify-content: center;
 }
 
 .row p {
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.4);
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.6;
