@@ -124,11 +124,10 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex: 1;
   margin-top: 1.3rem;
 }
 
-.caja1-index-main {
+.caja1-index-main,.caja2-index-main {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -140,25 +139,7 @@ body {
   font-weight: bold;
 }
 
-.content-index, .contentv2-index {
-  padding: 1rem;
-  border-radius: 10px;
-  width: 45%;
-}
-
-.caja2-index-main {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-top: 0.5rem;
-  padding: 0.5rem;
-  flex-wrap: wrap;
-  width: 100%;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.contentv3-index, .contentv4-index {
+.content-index, .contentv2-index, .contentv3-index, .contentv4-index {
   padding: 1rem;
   border-radius: 10px;
   width: 45%;
